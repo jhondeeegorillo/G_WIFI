@@ -1,0 +1,902 @@
+/* #############################################################
+      #
+      #  Font name: Segoe UI Variable
+      #  Owner: Microsoft Corporation
+      #  Link: https://learn.microsoft.com/en-us/windows/apps/design/downloads/#fonts
+      #
+      ################################################################ */
+
+@font-face {
+  font-family: "Segoe UI Variable Display";
+  src: url(../fonts/Segoe-UI-Variable-Static-Display-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Segoe UI Variable Display";
+  src: url(../fonts/Segoe-UI-Variable-Static-Display-Semilight.ttf);
+  font-weight: 350;
+}
+
+@font-face {
+  font-family: "Segoe UI Variable Display";
+  src: url(../fonts/Segoe-UI-Variable-Static-Display.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Segoe UI Variable Display";
+  src: url(../fonts/Segoe-UI-Variable-Static-Display-Semibold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Segoe UI Variable Display";
+  src: url(../fonts/Segoe-UI-Variable-Static-Display-Bold.ttf);
+  font-weight: 700;
+}
+
+/* ################################################################ */
+
+@font-face {
+  font-family: "Segoe UI Variable Small";
+  src: url(../fonts/Segoe-UI-Variable-Static-Small-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Segoe UI Variable Small";
+  src: url(../fonts/Segoe-UI-Variable-Static-Small-Semilight.ttf);
+  font-weight: 350;
+}
+
+@font-face {
+  font-family: "Segoe UI Variable Small";
+  src: url(../fonts/Segoe-UI-Variable-Static-Small.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Segoe UI Variable Small";
+  src: url(../fonts/Segoe-UI-Variable-Static-Small-Semibold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Segoe UI Variable Small";
+  src: url(../fonts/Segoe-UI-Variable-Static-Small-Bold.ttf);
+  font-weight: 700;
+}
+
+/* ################################################################ */
+
+@font-face {
+  font-family: "Segoe UI Variable Text";
+  src: url(../fonts/Segoe-UI-Variable-Static-Text-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Segoe UI Variable Text";
+  src: url(../fonts/Segoe-UI-Variable-Static-Text-Semilight.ttf);
+  font-weight: 350;
+}
+
+@font-face {
+  font-family: "Segoe UI Variable Text";
+  src: url(../fonts/Segoe-UI-Variable-Static-Text.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Segoe UI Variable Text";
+  src: url(../fonts/Segoe-UI-Variable-Static-Text-Semibold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Segoe UI Variable Text";
+  src: url(../fonts/Segoe-UI-Variable-Static-Text-Bold.ttf);
+  font-weight: 700;
+}
+
+/* ################################################################ */
+
+@font-face {
+  font-family: "Segoe Fluent Icons";
+  src: url(../fonts/Segoe-Fluent-Icons.ttf);
+}
+
+/* ################################################################ */
+
+:root {
+  --page-layout: 13in;
+  --duration-bg-color: #231f20;
+  --duration-text-color: #ffffff;
+  --voucher-logo: url(../png/logo-black.png);
+}
+
+html {
+  overflow: hidden;
+  background-color: rgb(236 237 238);
+}
+
+* {
+  font-family: "Segoe UI Variable Text";
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.block {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.icon {
+  font-family: "Segoe Fluent Icons" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: currentColor;
+  user-select: none;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  cursor: pointer;
+  user-select: none;
+  background-color: rgb(35 31 32);
+  color: #ffffff;
+  border:none;
+  width: auto;
+  height: 32px;
+  gap: 8px;
+  padding: 0 24px;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+button:active {
+  opacity: 1;
+  border: none;
+}
+
+button:disabled {
+  pointer-events: none;
+  background-color: #231f20;
+  border: none;
+}
+
+.btn-standard {
+  flex-direction: row;
+  width: auto;
+  background-color: rgb(35 31 32);
+  color: rgb(255 255 255);
+  border: 2px solid rgb(236 237 238);
+}
+
+.btn-standard:hover {
+  background-color: rgb(90 91 91);
+}
+
+.btn-standard:active {
+  background-color: #231f20;
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+.btn-standard:disabled {
+  background-color: rgb(35 31 32);
+  color: rgb(255 255 255 / 25%);
+  border: 2px solid rgb(255 255 255 / 25%);
+}
+
+h1 {
+  font-size: 20px;
+  color: rgb(255 255 255);
+}
+
+p {
+  font-family: "Segoe UI Variable Small";
+  font-size: 12px;
+  color: rgb(35 31 32);
+}
+
+aside {
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 300px;
+  height: 100vh;
+}
+
+.input-container {
+  height: 32px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.input-line {
+}
+
+.input-container .input:focus + .input-line,
+.voucher-textarea .textarea:focus + .input-line {
+}
+
+.input-error {
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0 11px;
+}
+
+.input:focus {
+}
+
+.textarea {
+  background-color: transparent;
+  border: none;
+  resize: none;
+  color: rgb(35 31 32);
+}
+
+.voucher-textarea {
+  height: 180px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.line-counter {
+  color: #6e7681;
+  text-align: right;
+  width: 46px;
+  padding: 8px 16px 8px 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.voucher-editor {
+  flex-grow: 1;
+  padding: 8px;
+}
+
+.heading-container {
+  padding: 32px 32px 14px;
+}
+
+.heading-container > div {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px 0;
+}
+
+.heading-container > div * {
+  color: rgb(90 91 91);
+}
+
+.heading-container p {
+  padding-top: 4px;
+  color: rgb(35 31 32);
+}
+
+.logo-img {
+  height: 50px;
+  user-select: none;
+  pointer-events: none;
+}
+
+.form-container {
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px 32px;
+  height: calc(100vh - 226px);
+  overflow-y: auto;
+}
+
+.group {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.group-option {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.group h6,
+.group-option h6 {
+  font-family: "Segoe UI Variable Small";
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(35 31 32);
+}
+
+.group p {
+  color: #fe3159;
+}
+
+.details {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.more-settings {
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  height: 32px;
+  border-radius: 4px;
+  color: rgb(35 31 32);
+  cursor: pointer;
+  user-select: none;
+}
+
+.more-settings:hover {
+  background-color: rgba(255, 255, 255, 0.0605);
+}
+
+.more-settings:active {
+  background-color: rgba(255, 255, 255, 0.0419);
+}
+
+.more-settings-container {
+  display: none;
+}
+
+#more-settings {
+  display: none;
+}
+
+#more-settings:checked ~ .more-settings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-footer {
+  bottom: 0;
+  width: 100%;
+  padding: 32px;
+}
+
+.input-select-group .input-container {
+  border-radius: 4px 0 0 4px;
+}
+
+.input-select-group .input {
+  border-radius: 30px;
+  color: rgb(35 31 32);
+  border:none;
+}
+
+.select-group select {
+  appearance: none;
+  border-radius: 30px;
+  width: auto;
+  padding: 0 26px 0 8px;
+  background-color: rgb(35 31 32);
+  color: rgb(255 255 255);
+}
+
+.select-group select option {
+  color: rgb(255 255 255);
+  background-color: rgb(90 91 91);
+  border-radius: 25px;
+  border:none;
+}
+
+.select-group .icon {
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10px;
+  line-height: 10px;
+  pointer-events: none;
+}
+
+.input.color {
+  flex-shrink: 0;
+  border-radius: 10px;
+  height: 20px;
+  width: 38px;
+  padding: 0 4px;
+  cursor: pointer;
+}
+
+.input-switch input {
+  display: none;
+}
+
+.input-switch label {
+  cursor: pointer;
+  transition: all 100ms;
+  background-color: rgb(35 31 32);
+  width: 38px;
+  height: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.input-switch label::after {
+  content: "";
+  display: block;
+  pointer-events: none;
+  position: absolute;
+  transition: all 100ms;
+  inset: 4px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.input-switch:hover label {
+  background-color: rgb(90 91 91);
+}
+
+.input-switch:hover label::after {
+  background-color: #ffffff;
+}
+
+.input-switch input:checked ~ label {
+  background-color: rgb(35 31 32);
+  border: none;
+}
+
+.input-switch input:checked ~ label::after {
+  background-color: #ffffff;
+  left: 21px;
+}
+
+.input-switch:hover input:checked ~ label {
+  background-color: rgb(90 91 91);
+}
+
+.input-switch:hover input:checked ~ span {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+main {
+  flex-grow: 1;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.header-section {
+  z-index: 1;
+    position: sticky;
+    top: 0;
+    padding: 30px 42px 55px;
+    background-color: rgb(236 237 238);
+}
+
+.header-container {
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(35 31 32);
+  height: 80px;
+  padding: 0 32px;
+  border-radius: 50px;
+}
+
+.voucher-preview-container {
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.page-layout {
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 1px;
+  background-color: #ffffff;
+  width: 8.5in;
+  height: var(--page-layout);
+  margin: auto;
+  padding: calc(0.2in + 1px);
+  border-radius: 30px;
+}
+
+.voucher-container {
+  flex-shrink: 0;
+  height: 96px;
+  width: 154px;
+  outline: #ecedee solid 2px;
+  overflow: hidden;
+}
+
+.voucher-container .logo {
+  background-image: var(--voucher-logo);
+  background-size: contain;
+  background-repeat: no-repeat;
+  user-select: none;
+  height: 24px;
+  margin: 8px 0 8px 10px;
+}
+
+.voucher-container p {
+  font-family: "Segoe UI Variable Display";
+  color: #231f20;
+  font-size: 20px;
+  margin: -10px 0px 0px 10px;
+  font-weight: bold;
+}
+
+.voucher-container p::after {
+  content: "Voucher Code";
+  position: absolute;
+  left: 2px;
+  bottom: -10px;
+  font-weight: normal;
+  font-size: 8px;
+}
+
+.voucher-container span {
+  user-select: none;
+  bottom: 8px;
+  left: 10px;
+  font-family: "Segoe UI Variable Display";
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+  color: var(--duration-text-color);
+  background-color: var(--duration-bg-color);
+  height: 20px;
+  min-width: 44px;
+  padding: 0 8px;
+  border-radius: 30px;
+}
+
+.get-started {
+  flex-direction: column;
+  gap: 56px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.get-started > i {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.get-started > div {
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 80%;
+}
+
+.get-started h2 {
+  font-size: 16px;
+  text-align: center;
+  color: rgb(35 31 32);
+}
+
+.get-started p {
+  text-align: center;
+  width: 60ch;
+  max-width: 100%;
+  color: rgb(90 91 91);
+}
+
+.get-started u {
+  font-size: 12px;
+  color: rgb(35 31 32);
+  cursor: pointer;
+}
+
+dialog::backdrop {
+  background-color: rgb(236 237 238 / 0%);
+}
+
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -34%);
+  flex-direction: column;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  width: 675px;
+  opacity: 0;
+}
+
+dialog.open {
+  opacity: 1;
+}
+
+dialog header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px 0px 15px;
+}
+
+.btn-close {
+  background-color: #231f20;
+  color: #ffffff;
+  border: none;
+  width: 30px;
+  height: 30px;
+  padding: 0 0 0 2px;
+  border-radius: 100px;
+}
+
+.btn-close:hover {
+  background-color: rgb(90 91 91);
+}
+
+.btn-close:active {
+  background-color: rgb(35 31 32);
+  color: rgb(255, 255, 255);
+  border: none;
+}
+
+a{
+  color:#231f20;
+}
+
+dialog .body {
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 15px 0 15px;
+}
+
+dialog .body p {
+  text-align: left;
+  margin: 0;
+}
+
+dialog .body * {
+  font-size: 12px;
+}
+
+dialog .body ol {
+  flex-direction: column;
+  gap: 20px;
+  height: 260px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+dialog .body ol li {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+dialog .body ol li p {
+  width: 60ch;
+  max-width: 100%;
+}
+
+dialog .body ol li img {
+  margin-left: 8px;
+  border-radius: 25px;
+  border: 2px solid rgb(236 237 238);
+  max-width: calc(100% - 16px);
+}
+
+.code-block {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(236 237 238);
+  border-radius: 25px;
+  padding: 8px 42px 8px 8px;
+  margin: 0 8px;
+}
+
+.code-block,
+.code-block * {
+  font-family: Consolas, "Courier New", monospace;
+  line-height: 1.6;
+}
+
+.code-block button {
+  top: 6px;
+  right: 6px;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 0;
+  width: 32px;
+}
+
+dialog button.ok {
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 16px;
+}
+
+.blue {
+  color: #0003be;
+}
+
+.skyblue {
+  color: #00a6ff;
+}
+
+.string {
+  color: #ff6c32;
+}
+
+.yellow {
+  color: #c2c500;
+}
+
+.gold {
+  color: #867900;
+}
+
+.magenta {
+  color: #ff008c;
+}
+
+.orange {
+  color: #ff8800;
+}
+
+@media screen and (min-width: 800px) {
+  *::-webkit-scrollbar {
+    background-color: transparent;
+    width: 8px;
+    height: 8px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(90 91 91);
+    border-radius: 4px;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(151, 154, 162, 0.75);
+  }
+
+  *::-webkit-scrollbar-thumb:active {
+    background-color: rgb(151, 154, 162);
+  }
+
+  *::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    overflow: auto;
+  }
+
+  body {
+    flex-direction: column-reverse;
+  }
+
+  aside {
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+
+  .heading-container {
+    padding: 0 5%;
+    border-bottom: 1px solid #30363d;
+  }
+
+  main {
+    height: calc(100vh - 64px);
+  }
+
+  .header-section {
+    padding: 0;
+  }
+
+  .header-container {
+    height: 64px;
+  }
+
+  #print-btn {
+    width: 32px;
+    padding: 0;
+  }
+
+  .heading-container {
+    border-bottom: none;
+  }
+
+  .heading-container > div {
+    display: flex;
+  }
+
+  .heading-container > img {
+    display: none;
+  }
+
+  .heading-container > p {
+    display: none;
+  }
+
+  .form-container {
+    padding: 16px 5%;
+    height: auto;
+  }
+
+  .form-footer {
+    position: static;
+    padding: 5%;
+    border-top: none;
+  }
+}
+
+@media print {
+  @page {
+    margin: 0;
+  }
+
+  @top-center {
+    content: "";
+  }
+
+  @bottom-center {
+    content: "";
+  }
+
+  html {
+    background-color: #ffffff;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+
+  aside {
+    display: none !important;
+  }
+
+  .header-section {
+    display: none !important;
+  }
+
+  main {
+    overflow: hidden;
+    height: auto;
+  }
+
+  .voucher-preview-container {
+    gap: 0;
+    margin: 0;
+  }
+
+  .page-layout {
+    page-break-after: always;
+  }
+}
