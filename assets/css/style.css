@@ -406,6 +406,9 @@ aside {
   bottom: 0;
   width: 100%;
   padding: 32px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .input-select-group .input-container {
@@ -830,8 +833,25 @@ dialog button.ok {
     height: calc(100vh - 440px);
   }
 
+  dialog {
+    top: 25%;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    opacity: 0;
+  }
+
+  dialog .body ol {
+    flex-direction: column;
+    gap: 20px;
+    height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
   .header-section {
-    padding: 0;
+    padding: 6px 5px 6px;
   }
 
   .header-container {
@@ -854,6 +874,11 @@ dialog button.ok {
     border-radius: 50px;
   }
 
+  .group {
+    flex-direction: column;
+    gap: 0px;
+  }
+
   .heading-container {
     border-bottom: none;
   }
@@ -865,12 +890,27 @@ dialog button.ok {
   .form-container {
     padding: 0px 5%;
     height: auto;
+    gap: 5px;
+  }
+
+  .details {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  #more-settings:checked ~ .more-settings-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
   }
 
   .form-footer {
     position: static;
-    padding: 5%;
+    padding-top: 10px;
     border-top: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 }
 
