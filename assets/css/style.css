@@ -845,7 +845,7 @@ dialog button.ok {
   dialog .body ol {
     flex-direction: column;
     gap: 20px;
-    height: 250px;
+    height: 180px;
     overflow-y: auto;
     overflow-x: hidden;
   }
